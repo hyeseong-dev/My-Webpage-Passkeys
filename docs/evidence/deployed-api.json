@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-11T02:01:01.436Z",
+  "generatedAt": "2026-09-11T05:24:40.799Z",
   "origin": "https://my-webpage-passkeys.vercel.app",
   "method": "Actual HTTP requests to deployed API / Neon PostgreSQL using disposable P-256 software authenticators. Not physical-device or biometric evidence.",
   "credentialsStorage": "Test-only in-memory software keys; actual Google/Apple/Windows/security-key storage remains user verification pending.",
   "storedPublicKey": {
     "format": "COSE P-256 public key, base64url",
-    "value": "pQECAyYgASFYIIYf4OOFSYgSbM3bX2Yjko07nsT885ylTHXWqdAhgCW-Ilgg9zhiYHkzotSBvc5rkaDKnMIEleMHnc-9gBmheYrwVD4",
+    "value": "pQECAyYgASFYINXoUntJvCNEKk3piWPc_8q0cl9zr69untg2IuGp9t_5IlggK0iroj8xGtmX9PGMM-UoUPm7jZESOZed6oF0cC3KsUk",
     "matchesAuthenticatorPublicKey": true
   },
   "crossAccountCounts": {
@@ -49,15 +49,15 @@
         "status": 200,
         "body": {
           "options": {
-            "challenge": "idA3MCIXq6pZuF7M363iv8EFNHwTHtQRyzgm9iHwSDo",
+            "challenge": "2lMoPBzGNTFlyjXXSRoBgE04fkF8rv_sT_okW1Dvzkw",
             "rp": {
               "name": "패스키 · 나만의 연습 공간",
               "id": "my-webpage-passkeys.vercel.app"
             },
             "user": {
-              "id": "FVc5LfZpATrm2Mng2QeIIXVsDCNfHE6nVwst3cvG4mo",
-              "name": "연습 계정 e1c6847a",
-              "displayName": "연습 계정 e1c6847a"
+              "id": "CK3WYUmtVYZfJ51zxzZp87zE1jXn9gBS76-jjJWkQsw",
+              "name": "연습 계정 2c0d9410",
+              "displayName": "연습 계정 2c0d9410"
             },
             "pubKeyCredParams": [
               {
@@ -100,15 +100,15 @@
         "status": 200,
         "body": {
           "options": {
-            "challenge": "SP2_2ARFwGPLWLH3EKHB9iCxEvZ1MKdU0q8VwR34hmA",
+            "challenge": "mBg-crdn281R2JDb1CHNLW53itW4P4TTODMRg-G7ocw",
             "rp": {
               "name": "패스키 · 나만의 연습 공간",
               "id": "my-webpage-passkeys.vercel.app"
             },
             "user": {
-              "id": "2KoE8NnaKsiIBt9L9mnDB9KmPd7F_yp5qnqri1mv_UA",
-              "name": "연습 계정 86eb42ec",
-              "displayName": "연습 계정 86eb42ec"
+              "id": "zGuzhyyDnp83oK7vahJzM8kTN0HUKsBWpr0pceKZhPI",
+              "name": "연습 계정 c96d52af",
+              "displayName": "연습 계정 c96d52af"
             },
             "pubKeyCredParams": [
               {
@@ -167,15 +167,15 @@
         "status": 200,
         "body": {
           "options": {
-            "challenge": "l-skm_AVIrspRVCE67KbI_r2qnRARbJPr11MOeZwRmY",
+            "challenge": "w0hGRBjp2uJyQRpdKp7QNklUUfiIwBNUT75zSKmgMas",
             "rp": {
               "name": "패스키 · 나만의 연습 공간",
               "id": "my-webpage-passkeys.vercel.app"
             },
             "user": {
-              "id": "MkW5dQ-nORke2_bSojvG_IUCgb975f3zBuP-L5odHcE",
-              "name": "연습 계정 020fa3ba",
-              "displayName": "연습 계정 020fa3ba"
+              "id": "Cr8RjPJZMFJdOMF4uJV2qzafsO3tHLkAGZYCS5TS_LQ",
+              "name": "연습 계정 92f40e91",
+              "displayName": "연습 계정 92f40e91"
             },
             "pubKeyCredParams": [
               {
@@ -211,8 +211,8 @@
         "path": "/api/passkeys/register-verify",
         "body": {
           "response": {
-            "id": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
-            "rawId": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+            "id": "h-Kv7TEEwL0coipafYDGNHpfOrY7zNeXas7el40sQ4k",
+            "rawId": "h-Kv7TEEwL0coipafYDGNHpfOrY7zNeXas7el40sQ4k",
             "type": "public-key",
             "clientExtensionResults": {
               "credProps": {
@@ -221,8 +221,8 @@
             },
             "authenticatorAttachment": "platform",
             "response": {
-              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uY3JlYXRlIiwiY2hhbGxlbmdlIjoibC1za21fQVZJcnNwUlZDRTY3S2JJX3IycW5SQVJiSlByMTFNT2Vad1JtWSIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
-              "attestationObject": "o2NmbXRkbm9uZWhhdXRoRGF0YVikb5k92OBJZfrNl-XlKR1uRsMslFdnDKkCXNt4vkhqjllFAAAAAAAAAAAAAAAAAAAAAAAAAAAAIKdQKqLDQM274XB-aMxsfwncbbzjzGy55b5K31T7hxp1pQECAyYgASFYIIYf4OOFSYgSbM3bX2Yjko07nsT885ylTHXWqdAhgCW-Ilgg9zhiYHkzotSBvc5rkaDKnMIEleMHnc-9gBmheYrwVD5nYXR0U3RtdKA",
+              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uY3JlYXRlIiwiY2hhbGxlbmdlIjoidzBoR1JCanAydUp5UVJwZEtwN1FOa2xVVWZpSXdCTlVUNzV6U0ttZ01hcyIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
+              "attestationObject": "o2NmbXRkbm9uZWhhdXRoRGF0YVikb5k92OBJZfrNl-XlKR1uRsMslFdnDKkCXNt4vkhqjllFAAAAAAAAAAAAAAAAAAAAAAAAAAAAIIfir-0xBMC9HKIqWn2AxjR6Xzq2O8zXl2rO3peNLEOJpQECAyYgASFYINXoUntJvCNEKk3piWPc_8q0cl9zr69untg2IuGp9t_5IlggK0iroj8xGtmX9PGMM-UoUPm7jZESOZed6oF0cC3KsUlnYXR0U3RtdKA",
               "transports": [
                 "internal"
               ]
@@ -236,14 +236,14 @@
         "body": {
           "authenticated": true,
           "account": {
-            "id": "020fa3ba-af67-4c93-83fa-576c796d75e0",
-            "displayName": "연습 계정 020fa3ba"
+            "id": "92f40e91-2687-4aee-9319-eed4622dea02",
+            "displayName": "연습 계정 92f40e91"
           },
           "credentials": [
             {
-              "id": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+              "id": "h-Kv7TEEwL0coipafYDGNHpfOrY7zNeXas7el40sQ4k",
               "name": "테스트 A · 첫 번째 키",
-              "createdAt": "2026-09-11T02:00:55.709Z"
+              "createdAt": "2026-09-11T05:24:34.657Z"
             }
           ]
         },
@@ -264,15 +264,15 @@
         "status": 200,
         "body": {
           "options": {
-            "challenge": "WFfO_siWUrTy4BOwxdHYWEeHT24DqiqoiA_ui4Q8fco",
+            "challenge": "n07Fhj4hOosWYi9i4S0VRK8aKJ6HD1T5jM9mOsy7rJE",
             "rp": {
               "name": "패스키 · 나만의 연습 공간",
               "id": "my-webpage-passkeys.vercel.app"
             },
             "user": {
-              "id": "MkW5dQ-nORke2_bSojvG_IUCgb975f3zBuP-L5odHcE",
-              "name": "연습 계정 020fa3ba",
-              "displayName": "연습 계정 020fa3ba"
+              "id": "Cr8RjPJZMFJdOMF4uJV2qzafsO3tHLkAGZYCS5TS_LQ",
+              "name": "연습 계정 92f40e91",
+              "displayName": "연습 계정 92f40e91"
             },
             "pubKeyCredParams": [
               {
@@ -288,7 +288,7 @@
             "attestation": "none",
             "excludeCredentials": [
               {
-                "id": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+                "id": "h-Kv7TEEwL0coipafYDGNHpfOrY7zNeXas7el40sQ4k",
                 "type": "public-key"
               }
             ],
@@ -313,8 +313,8 @@
         "path": "/api/passkeys/register-verify",
         "body": {
           "response": {
-            "id": "4YwoA1tHWVEfnvhORJ_wo5Hh70UMgmE71BsLuXyEc8E",
-            "rawId": "4YwoA1tHWVEfnvhORJ_wo5Hh70UMgmE71BsLuXyEc8E",
+            "id": "ocZVuZ7jnC9NAseCD-sb0p8tErfCyNDxmQQpBulYzY8",
+            "rawId": "ocZVuZ7jnC9NAseCD-sb0p8tErfCyNDxmQQpBulYzY8",
             "type": "public-key",
             "clientExtensionResults": {
               "credProps": {
@@ -323,8 +323,8 @@
             },
             "authenticatorAttachment": "platform",
             "response": {
-              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uY3JlYXRlIiwiY2hhbGxlbmdlIjoiV0ZmT19zaVdVclR5NEJPd3hkSFlXRWVIVDI0RHFpcW9pQV91aTRROGZjbyIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
-              "attestationObject": "o2NmbXRkbm9uZWhhdXRoRGF0YVikb5k92OBJZfrNl-XlKR1uRsMslFdnDKkCXNt4vkhqjllFAAAAAAAAAAAAAAAAAAAAAAAAAAAAIOGMKANbR1lRH574TkSf8KOR4e9FDIJhO9QbC7l8hHPBpQECAyYgASFYIOj4daaxA729f6qJ6fAfPh2t6fqWSCrGWYCJOUQgerfcIlggI7CugFzkBY1nVHDJG5Dx3fmOhHZ1jny0M7PoyhjwGPxnYXR0U3RtdKA",
+              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uY3JlYXRlIiwiY2hhbGxlbmdlIjoibjA3RmhqNGhPb3NXWWk5aTRTMFZSSzhhS0o2SEQxVDVqTTltT3N5N3JKRSIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
+              "attestationObject": "o2NmbXRkbm9uZWhhdXRoRGF0YVikb5k92OBJZfrNl-XlKR1uRsMslFdnDKkCXNt4vkhqjllFAAAAAAAAAAAAAAAAAAAAAAAAAAAAIKHGVbme45wvTQLHgg_rG9KfLRK3wsjQ8ZkEKQbpWM2PpQECAyYgASFYIJbHeY8I6CfUs8xG6YRtxQcQ-Qu_HWgdJZgDjz-oHNFdIlgga4cH0EwZ1GyQKBdp71PsEbNumo16yM3dV7G-2anpDVlnYXR0U3RtdKA",
               "transports": [
                 "internal"
               ]
@@ -338,19 +338,19 @@
         "body": {
           "authenticated": true,
           "account": {
-            "id": "020fa3ba-af67-4c93-83fa-576c796d75e0",
-            "displayName": "연습 계정 020fa3ba"
+            "id": "92f40e91-2687-4aee-9319-eed4622dea02",
+            "displayName": "연습 계정 92f40e91"
           },
           "credentials": [
             {
-              "id": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+              "id": "h-Kv7TEEwL0coipafYDGNHpfOrY7zNeXas7el40sQ4k",
               "name": "테스트 A · 첫 번째 키",
-              "createdAt": "2026-09-11T02:00:55.709Z"
+              "createdAt": "2026-09-11T05:24:34.657Z"
             },
             {
-              "id": "4YwoA1tHWVEfnvhORJ_wo5Hh70UMgmE71BsLuXyEc8E",
+              "id": "ocZVuZ7jnC9NAseCD-sb0p8tErfCyNDxmQQpBulYzY8",
               "name": "테스트 A · 두 번째 키",
-              "createdAt": "2026-09-11T02:00:56.236Z"
+              "createdAt": "2026-09-11T05:24:34.978Z"
             }
           ]
         },
@@ -371,15 +371,15 @@
         "status": 200,
         "body": {
           "options": {
-            "challenge": "lqgSdj8pPCdMjrShMrlsRw26ACZNrdnBoSGFq9i40Pc",
+            "challenge": "lOU_Ey7TBpbHgnNp7Cu1Y3GUfI15zUtI5ebe9vLu1Ko",
             "rp": {
               "name": "패스키 · 나만의 연습 공간",
               "id": "my-webpage-passkeys.vercel.app"
             },
             "user": {
-              "id": "Sxj8xP3zrkHNKRKT4JWwqoYQ4psvl4f4Agsxj04xRzI",
-              "name": "연습 계정 dfd97830",
-              "displayName": "연습 계정 dfd97830"
+              "id": "poSUaXjkEZVcoCeJF9sf-U8Ovoln6G_O5eDl-RoxTGM",
+              "name": "연습 계정 c24f23ed",
+              "displayName": "연습 계정 c24f23ed"
             },
             "pubKeyCredParams": [
               {
@@ -415,8 +415,8 @@
         "path": "/api/passkeys/register-verify",
         "body": {
           "response": {
-            "id": "qR5HFXlwNqElGBpGQVlfj3RZjNFnQXqi3AgSpUurO9E",
-            "rawId": "qR5HFXlwNqElGBpGQVlfj3RZjNFnQXqi3AgSpUurO9E",
+            "id": "w4gWLbZQrKQJAcr0P_5tleyEIm8c7vQqd6E7SMGEZbI",
+            "rawId": "w4gWLbZQrKQJAcr0P_5tleyEIm8c7vQqd6E7SMGEZbI",
             "type": "public-key",
             "clientExtensionResults": {
               "credProps": {
@@ -425,8 +425,8 @@
             },
             "authenticatorAttachment": "platform",
             "response": {
-              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uY3JlYXRlIiwiY2hhbGxlbmdlIjoibHFnU2RqOHBQQ2RNanJTaE1ybHNSdzI2QUNaTnJkbkJvU0dGcTlpNDBQYyIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
-              "attestationObject": "o2NmbXRkbm9uZWhhdXRoRGF0YVikb5k92OBJZfrNl-XlKR1uRsMslFdnDKkCXNt4vkhqjllFAAAAAAAAAAAAAAAAAAAAAAAAAAAAIKkeRxV5cDahJRgaRkFZX490WYzRZ0F6otwIEqVLqzvRpQECAyYgASFYIIGCw6Bkhgt90C7hlStXwtwRuY6DP08WselNz0YfmmyaIlggrPusfW_-JqV3BvJ_wsOxrwwzuVkNCWo_QLLQ2GqkteFnYXR0U3RtdKA",
+              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uY3JlYXRlIiwiY2hhbGxlbmdlIjoibE9VX0V5N1RCcGJIZ25OcDdDdTFZM0dVZkkxNXpVdEk1ZWJlOXZMdTFLbyIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
+              "attestationObject": "o2NmbXRkbm9uZWhhdXRoRGF0YVikb5k92OBJZfrNl-XlKR1uRsMslFdnDKkCXNt4vkhqjllFAAAAAAAAAAAAAAAAAAAAAAAAAAAAIMOIFi22UKykCQHK9D_-bZXshCJvHO70KnehO0jBhGWypQECAyYgASFYIHlkvYlxlEz1kgPNpxSBeoR_VJy82XeBK_1y4e8a6f4HIlggK8ridGEbjWqassyHkbl_78NDcrFHz3ukR3knjbd8jIRnYXR0U3RtdKA",
               "transports": [
                 "internal"
               ]
@@ -440,14 +440,14 @@
         "body": {
           "authenticated": true,
           "account": {
-            "id": "dfd97830-56be-4d14-8e1f-cb58db95c4b3",
-            "displayName": "연습 계정 dfd97830"
+            "id": "c24f23ed-a98f-4461-9fd0-a4bc58856655",
+            "displayName": "연습 계정 c24f23ed"
           },
           "credentials": [
             {
-              "id": "qR5HFXlwNqElGBpGQVlfj3RZjNFnQXqi3AgSpUurO9E",
+              "id": "w4gWLbZQrKQJAcr0P_5tleyEIm8c7vQqd6E7SMGEZbI",
               "name": "테스트 B · 첫 번째 키",
-              "createdAt": "2026-09-11T02:00:56.745Z"
+              "createdAt": "2026-09-11T05:24:35.342Z"
             }
           ]
         },
@@ -465,24 +465,24 @@
         "status": 200,
         "body": {
           "account": {
-            "id": "020fa3ba-af67-4c93-83fa-576c796d75e0",
-            "displayName": "연습 계정 020fa3ba"
+            "id": "92f40e91-2687-4aee-9319-eed4622dea02",
+            "displayName": "연습 계정 92f40e91"
           },
           "items": [
             {
-              "id": "f71504d8-2518-4bbf-ad55-eb20124469c0",
+              "id": "efeac260-83fc-4fff-9fa3-26815cafaca6",
               "title": "나의 연습 노트",
-              "body": "연습 계정 020fa3ba의 가상 기록 020fa3ba-A입니다. 오늘은 로그인한 사람에게만 자료를 보여 주는 흐름을 연습했습니다."
+              "body": "연습 계정 92f40e91의 가상 기록 92f40e91-A입니다. 오늘은 로그인한 사람에게만 자료를 보여 주는 흐름을 연습했습니다."
             },
             {
-              "id": "11ed1ce6-7daf-4af1-890f-f29764039231",
+              "id": "e8bc1f2c-269a-41b7-a08c-f76a2c276476",
               "title": "다음 학습 계획",
-              "body": "연습 계정 020fa3ba의 가상 계획 020fa3ba-B입니다. 다음 시간에는 두 번째 패스키를 등록하고 기기를 바꿔 로그인할 예정입니다."
+              "body": "연습 계정 92f40e91의 가상 계획 92f40e91-B입니다. 다음 시간에는 두 번째 패스키를 등록하고 기기를 바꿔 로그인할 예정입니다."
             },
             {
-              "id": "337c8e5a-f6d0-45ae-beed-f347f316ea20",
+              "id": "75ce0d6f-966b-4bbd-a8c1-02960087f6db",
               "title": "프로젝트 아이디어",
-              "body": "연습 계정 020fa3ba의 가상 아이디어 020fa3ba-C입니다. 개인 학습 자료를 계정별로 보관하는 작은 앱을 구상했습니다."
+              "body": "연습 계정 92f40e91의 가상 아이디어 92f40e91-C입니다. 개인 학습 자료를 계정별로 보관하는 작은 앱을 구상했습니다."
             }
           ]
         },
@@ -500,24 +500,24 @@
         "status": 200,
         "body": {
           "account": {
-            "id": "dfd97830-56be-4d14-8e1f-cb58db95c4b3",
-            "displayName": "연습 계정 dfd97830"
+            "id": "c24f23ed-a98f-4461-9fd0-a4bc58856655",
+            "displayName": "연습 계정 c24f23ed"
           },
           "items": [
             {
-              "id": "1607769a-6680-4d99-9a1d-9a0176e9fcc2",
+              "id": "c45b966e-7cda-45b7-a9c6-7662dcd652c0",
               "title": "나의 연습 노트",
-              "body": "연습 계정 dfd97830의 가상 기록 dfd97830-A입니다. 오늘은 로그인한 사람에게만 자료를 보여 주는 흐름을 연습했습니다."
+              "body": "연습 계정 c24f23ed의 가상 기록 c24f23ed-A입니다. 오늘은 로그인한 사람에게만 자료를 보여 주는 흐름을 연습했습니다."
             },
             {
-              "id": "46061f96-cb40-41cf-baeb-ed3c2a2df235",
+              "id": "ae95303e-0310-4a8f-b06f-dbf54e5afe59",
               "title": "다음 학습 계획",
-              "body": "연습 계정 dfd97830의 가상 계획 dfd97830-B입니다. 다음 시간에는 두 번째 패스키를 등록하고 기기를 바꿔 로그인할 예정입니다."
+              "body": "연습 계정 c24f23ed의 가상 계획 c24f23ed-B입니다. 다음 시간에는 두 번째 패스키를 등록하고 기기를 바꿔 로그인할 예정입니다."
             },
             {
-              "id": "fd83ddcc-2167-4ac2-a39e-fe633188c2a8",
+              "id": "645c6add-baeb-487d-8888-719b60c42e2c",
               "title": "프로젝트 아이디어",
-              "body": "연습 계정 dfd97830의 가상 아이디어 dfd97830-C입니다. 개인 학습 자료를 계정별로 보관하는 작은 앱을 구상했습니다."
+              "body": "연습 계정 c24f23ed의 가상 아이디어 c24f23ed-C입니다. 개인 학습 자료를 계정별로 보관하는 작은 앱을 구상했습니다."
             }
           ]
         },
@@ -528,7 +528,7 @@
       "label": "A에서 B 자료 접근 거절",
       "request": {
         "method": "GET",
-        "path": "/api/passkeys/private/1607769a-6680-4d99-9a1d-9a0176e9fcc2",
+        "path": "/api/passkeys/private/c45b966e-7cda-45b7-a9c6-7662dcd652c0",
         "cookie": "[REDACTED]"
       },
       "response": {
@@ -543,7 +543,7 @@
       "label": "B에서 A 자료 접근 거절",
       "request": {
         "method": "GET",
-        "path": "/api/passkeys/private/f71504d8-2518-4bbf-ad55-eb20124469c0",
+        "path": "/api/passkeys/private/efeac260-83fc-4fff-9fa3-26815cafaca6",
         "cookie": "[REDACTED]"
       },
       "response": {
@@ -565,24 +565,24 @@
         "status": 200,
         "body": {
           "account": {
-            "id": "020fa3ba-af67-4c93-83fa-576c796d75e0",
-            "displayName": "연습 계정 020fa3ba"
+            "id": "92f40e91-2687-4aee-9319-eed4622dea02",
+            "displayName": "연습 계정 92f40e91"
           },
           "items": [
             {
-              "id": "f71504d8-2518-4bbf-ad55-eb20124469c0",
+              "id": "efeac260-83fc-4fff-9fa3-26815cafaca6",
               "title": "나의 연습 노트",
-              "body": "연습 계정 020fa3ba의 가상 기록 020fa3ba-A입니다. 오늘은 로그인한 사람에게만 자료를 보여 주는 흐름을 연습했습니다."
+              "body": "연습 계정 92f40e91의 가상 기록 92f40e91-A입니다. 오늘은 로그인한 사람에게만 자료를 보여 주는 흐름을 연습했습니다."
             },
             {
-              "id": "11ed1ce6-7daf-4af1-890f-f29764039231",
+              "id": "e8bc1f2c-269a-41b7-a08c-f76a2c276476",
               "title": "다음 학습 계획",
-              "body": "연습 계정 020fa3ba의 가상 계획 020fa3ba-B입니다. 다음 시간에는 두 번째 패스키를 등록하고 기기를 바꿔 로그인할 예정입니다."
+              "body": "연습 계정 92f40e91의 가상 계획 92f40e91-B입니다. 다음 시간에는 두 번째 패스키를 등록하고 기기를 바꿔 로그인할 예정입니다."
             },
             {
-              "id": "337c8e5a-f6d0-45ae-beed-f347f316ea20",
+              "id": "75ce0d6f-966b-4bbd-a8c1-02960087f6db",
               "title": "프로젝트 아이디어",
-              "body": "연습 계정 020fa3ba의 가상 아이디어 020fa3ba-C입니다. 개인 학습 자료를 계정별로 보관하는 작은 앱을 구상했습니다."
+              "body": "연습 계정 92f40e91의 가상 아이디어 92f40e91-C입니다. 개인 학습 자료를 계정별로 보관하는 작은 앱을 구상했습니다."
             }
           ]
         },
@@ -600,24 +600,24 @@
         "status": 200,
         "body": {
           "account": {
-            "id": "dfd97830-56be-4d14-8e1f-cb58db95c4b3",
-            "displayName": "연습 계정 dfd97830"
+            "id": "c24f23ed-a98f-4461-9fd0-a4bc58856655",
+            "displayName": "연습 계정 c24f23ed"
           },
           "items": [
             {
-              "id": "1607769a-6680-4d99-9a1d-9a0176e9fcc2",
+              "id": "c45b966e-7cda-45b7-a9c6-7662dcd652c0",
               "title": "나의 연습 노트",
-              "body": "연습 계정 dfd97830의 가상 기록 dfd97830-A입니다. 오늘은 로그인한 사람에게만 자료를 보여 주는 흐름을 연습했습니다."
+              "body": "연습 계정 c24f23ed의 가상 기록 c24f23ed-A입니다. 오늘은 로그인한 사람에게만 자료를 보여 주는 흐름을 연습했습니다."
             },
             {
-              "id": "46061f96-cb40-41cf-baeb-ed3c2a2df235",
+              "id": "ae95303e-0310-4a8f-b06f-dbf54e5afe59",
               "title": "다음 학습 계획",
-              "body": "연습 계정 dfd97830의 가상 계획 dfd97830-B입니다. 다음 시간에는 두 번째 패스키를 등록하고 기기를 바꿔 로그인할 예정입니다."
+              "body": "연습 계정 c24f23ed의 가상 계획 c24f23ed-B입니다. 다음 시간에는 두 번째 패스키를 등록하고 기기를 바꿔 로그인할 예정입니다."
             },
             {
-              "id": "fd83ddcc-2167-4ac2-a39e-fe633188c2a8",
+              "id": "645c6add-baeb-487d-8888-719b60c42e2c",
               "title": "프로젝트 아이디어",
-              "body": "연습 계정 dfd97830의 가상 아이디어 dfd97830-C입니다. 개인 학습 자료를 계정별로 보관하는 작은 앱을 구상했습니다."
+              "body": "연습 계정 c24f23ed의 가상 아이디어 c24f23ed-C입니다. 개인 학습 자료를 계정별로 보관하는 작은 앱을 구상했습니다."
             }
           ]
         },
@@ -628,31 +628,31 @@
       "label": "쿼리 계정 위조 무시",
       "request": {
         "method": "GET",
-        "path": "/api/passkeys/private?accountId=dfd97830-56be-4d14-8e1f-cb58db95c4b3",
+        "path": "/api/passkeys/private?accountId=c24f23ed-a98f-4461-9fd0-a4bc58856655",
         "cookie": "[REDACTED]"
       },
       "response": {
         "status": 200,
         "body": {
           "account": {
-            "id": "020fa3ba-af67-4c93-83fa-576c796d75e0",
-            "displayName": "연습 계정 020fa3ba"
+            "id": "92f40e91-2687-4aee-9319-eed4622dea02",
+            "displayName": "연습 계정 92f40e91"
           },
           "items": [
             {
-              "id": "f71504d8-2518-4bbf-ad55-eb20124469c0",
+              "id": "efeac260-83fc-4fff-9fa3-26815cafaca6",
               "title": "나의 연습 노트",
-              "body": "연습 계정 020fa3ba의 가상 기록 020fa3ba-A입니다. 오늘은 로그인한 사람에게만 자료를 보여 주는 흐름을 연습했습니다."
+              "body": "연습 계정 92f40e91의 가상 기록 92f40e91-A입니다. 오늘은 로그인한 사람에게만 자료를 보여 주는 흐름을 연습했습니다."
             },
             {
-              "id": "11ed1ce6-7daf-4af1-890f-f29764039231",
+              "id": "e8bc1f2c-269a-41b7-a08c-f76a2c276476",
               "title": "다음 학습 계획",
-              "body": "연습 계정 020fa3ba의 가상 계획 020fa3ba-B입니다. 다음 시간에는 두 번째 패스키를 등록하고 기기를 바꿔 로그인할 예정입니다."
+              "body": "연습 계정 92f40e91의 가상 계획 92f40e91-B입니다. 다음 시간에는 두 번째 패스키를 등록하고 기기를 바꿔 로그인할 예정입니다."
             },
             {
-              "id": "337c8e5a-f6d0-45ae-beed-f347f316ea20",
+              "id": "75ce0d6f-966b-4bbd-a8c1-02960087f6db",
               "title": "프로젝트 아이디어",
-              "body": "연습 계정 020fa3ba의 가상 아이디어 020fa3ba-C입니다. 개인 학습 자료를 계정별로 보관하는 작은 앱을 구상했습니다."
+              "body": "연습 계정 92f40e91의 가상 아이디어 92f40e91-C입니다. 개인 학습 자료를 계정별로 보관하는 작은 앱을 구상했습니다."
             }
           ]
         },
@@ -665,7 +665,7 @@
         "method": "POST",
         "path": "/api/passkeys/private",
         "body": {
-          "accountId": "dfd97830-56be-4d14-8e1f-cb58db95c4b3"
+          "accountId": "c24f23ed-a98f-4461-9fd0-a4bc58856655"
         },
         "cookie": "[REDACTED]"
       },
@@ -673,24 +673,24 @@
         "status": 200,
         "body": {
           "account": {
-            "id": "020fa3ba-af67-4c93-83fa-576c796d75e0",
-            "displayName": "연습 계정 020fa3ba"
+            "id": "92f40e91-2687-4aee-9319-eed4622dea02",
+            "displayName": "연습 계정 92f40e91"
           },
           "items": [
             {
-              "id": "f71504d8-2518-4bbf-ad55-eb20124469c0",
+              "id": "efeac260-83fc-4fff-9fa3-26815cafaca6",
               "title": "나의 연습 노트",
-              "body": "연습 계정 020fa3ba의 가상 기록 020fa3ba-A입니다. 오늘은 로그인한 사람에게만 자료를 보여 주는 흐름을 연습했습니다."
+              "body": "연습 계정 92f40e91의 가상 기록 92f40e91-A입니다. 오늘은 로그인한 사람에게만 자료를 보여 주는 흐름을 연습했습니다."
             },
             {
-              "id": "11ed1ce6-7daf-4af1-890f-f29764039231",
+              "id": "e8bc1f2c-269a-41b7-a08c-f76a2c276476",
               "title": "다음 학습 계획",
-              "body": "연습 계정 020fa3ba의 가상 계획 020fa3ba-B입니다. 다음 시간에는 두 번째 패스키를 등록하고 기기를 바꿔 로그인할 예정입니다."
+              "body": "연습 계정 92f40e91의 가상 계획 92f40e91-B입니다. 다음 시간에는 두 번째 패스키를 등록하고 기기를 바꿔 로그인할 예정입니다."
             },
             {
-              "id": "337c8e5a-f6d0-45ae-beed-f347f316ea20",
+              "id": "75ce0d6f-966b-4bbd-a8c1-02960087f6db",
               "title": "프로젝트 아이디어",
-              "body": "연습 계정 020fa3ba의 가상 아이디어 020fa3ba-C입니다. 개인 학습 자료를 계정별로 보관하는 작은 앱을 구상했습니다."
+              "body": "연습 계정 92f40e91의 가상 아이디어 92f40e91-C입니다. 개인 학습 자료를 계정별로 보관하는 작은 앱을 구상했습니다."
             }
           ]
         },
@@ -741,7 +741,7 @@
         "body": {
           "options": {
             "rpId": "my-webpage-passkeys.vercel.app",
-            "challenge": "vH3Zakbsnx7YPrY7T4xHds9UA5Ml2Jp3nN4nd-CHcWg",
+            "challenge": "Qey48abuCDSaSK4lgxeSb-7rzwKrg9O-DI1LCPeBLqM",
             "timeout": 300000,
             "userVerification": "required"
           }
@@ -756,16 +756,16 @@
         "path": "/api/passkeys/login-verify",
         "body": {
           "response": {
-            "id": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
-            "rawId": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+            "id": "h-Kv7TEEwL0coipafYDGNHpfOrY7zNeXas7el40sQ4k",
+            "rawId": "h-Kv7TEEwL0coipafYDGNHpfOrY7zNeXas7el40sQ4k",
             "type": "public-key",
             "clientExtensionResults": {},
             "authenticatorAttachment": "platform",
             "response": {
-              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uZ2V0IiwiY2hhbGxlbmdlIjoidkgzWmFrYnNueDdZUHJZN1Q0eEhkczlVQTVNbDJKcDNuTjRuZC1DSGNXZyIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
+              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uZ2V0IiwiY2hhbGxlbmdlIjoiUWV5NDhhYnVDRFNhU0s0bGd4ZVNiLTdyendLcmc5Ty1ESTFMQ1BlQkxxTSIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
               "authenticatorData": "b5k92OBJZfrNl-XlKR1uRsMslFdnDKkCXNt4vkhqjlkFAAAAAQ",
-              "signature": "MEUCIBX9L-yLKzJDvrEdYp2_JaFejjJ-VWH1RnZwhHDs41YIAiEAzkejXuxhYMxE_HGzUpYP7Cqn-j_75VpAMHKVdOssMuk",
-              "userHandle": "MkW5dQ-nORke2_bSojvG_IUCgb975f3zBuP-L5odHcE"
+              "signature": "MEYCIQCy2UJ6WSlUCjyntMNoZlfvl5rM0RzcadcgZejgf906wQIhAJacaPWs4MsZ0g1Wkfcx6IO7aXirA1iTB6B941cTUYpQ",
+              "userHandle": "Cr8RjPJZMFJdOMF4uJV2qzafsO3tHLkAGZYCS5TS_LQ"
             }
           }
         },
@@ -776,19 +776,19 @@
         "body": {
           "authenticated": true,
           "account": {
-            "id": "020fa3ba-af67-4c93-83fa-576c796d75e0",
-            "displayName": "연습 계정 020fa3ba"
+            "id": "92f40e91-2687-4aee-9319-eed4622dea02",
+            "displayName": "연습 계정 92f40e91"
           },
           "credentials": [
             {
-              "id": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+              "id": "h-Kv7TEEwL0coipafYDGNHpfOrY7zNeXas7el40sQ4k",
               "name": "테스트 A · 첫 번째 키",
-              "createdAt": "2026-09-11T02:00:55.709Z"
+              "createdAt": "2026-09-11T05:24:34.657Z"
             },
             {
-              "id": "4YwoA1tHWVEfnvhORJ_wo5Hh70UMgmE71BsLuXyEc8E",
+              "id": "ocZVuZ7jnC9NAseCD-sb0p8tErfCyNDxmQQpBulYzY8",
               "name": "테스트 A · 두 번째 키",
-              "createdAt": "2026-09-11T02:00:56.236Z"
+              "createdAt": "2026-09-11T05:24:34.978Z"
             }
           ]
         },
@@ -802,16 +802,16 @@
         "path": "/api/passkeys/login-verify",
         "body": {
           "response": {
-            "id": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
-            "rawId": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+            "id": "h-Kv7TEEwL0coipafYDGNHpfOrY7zNeXas7el40sQ4k",
+            "rawId": "h-Kv7TEEwL0coipafYDGNHpfOrY7zNeXas7el40sQ4k",
             "type": "public-key",
             "clientExtensionResults": {},
             "authenticatorAttachment": "platform",
             "response": {
-              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uZ2V0IiwiY2hhbGxlbmdlIjoidkgzWmFrYnNueDdZUHJZN1Q0eEhkczlVQTVNbDJKcDNuTjRuZC1DSGNXZyIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
+              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uZ2V0IiwiY2hhbGxlbmdlIjoiUWV5NDhhYnVDRFNhU0s0bGd4ZVNiLTdyendLcmc5Ty1ESTFMQ1BlQkxxTSIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
               "authenticatorData": "b5k92OBJZfrNl-XlKR1uRsMslFdnDKkCXNt4vkhqjlkFAAAAAQ",
-              "signature": "MEUCIBX9L-yLKzJDvrEdYp2_JaFejjJ-VWH1RnZwhHDs41YIAiEAzkejXuxhYMxE_HGzUpYP7Cqn-j_75VpAMHKVdOssMuk",
-              "userHandle": "MkW5dQ-nORke2_bSojvG_IUCgb975f3zBuP-L5odHcE"
+              "signature": "MEYCIQCy2UJ6WSlUCjyntMNoZlfvl5rM0RzcadcgZejgf906wQIhAJacaPWs4MsZ0g1Wkfcx6IO7aXirA1iTB6B941cTUYpQ",
+              "userHandle": "Cr8RjPJZMFJdOMF4uJV2qzafsO3tHLkAGZYCS5TS_LQ"
             }
           }
         },
@@ -838,7 +838,7 @@
         "body": {
           "options": {
             "rpId": "my-webpage-passkeys.vercel.app",
-            "challenge": "ysKwM8yiyce5cZd912x2sKLj40phhUXfLq2UIZVHzh8",
+            "challenge": "am5Tsr4mcaQskUbccYYVERv0rLEqbJOdLc0LcMHOaEc",
             "timeout": 300000,
             "userVerification": "required"
           }
@@ -853,16 +853,16 @@
         "path": "/api/passkeys/login-verify",
         "body": {
           "response": {
-            "id": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
-            "rawId": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+            "id": "h-Kv7TEEwL0coipafYDGNHpfOrY7zNeXas7el40sQ4k",
+            "rawId": "h-Kv7TEEwL0coipafYDGNHpfOrY7zNeXas7el40sQ4k",
             "type": "public-key",
             "clientExtensionResults": {},
             "authenticatorAttachment": "platform",
             "response": {
-              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uZ2V0IiwiY2hhbGxlbmdlIjoieXNLd004eWl5Y2U1Y1pkOTEyeDJzS0xqNDBwaGhVWGZMcTJVSVpWSHpoOCIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
+              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uZ2V0IiwiY2hhbGxlbmdlIjoiYW01VHNyNG1jYVFza1ViY2NZWVZFUnYwckxFcWJKT2RMYzBMY01IT2FFYyIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
               "authenticatorData": "b5k92OBJZfrNl-XlKR1uRsMslFdnDKkCXNt4vkhqjlkFAAAAAg",
-              "signature": "MEUCIQD6Mwj9QltQIgCa_ZdBQJzzp4FltFy6q4ilCnNYm3xQZAIgAMLeNtUmW9W0LlNsU4o4Uc1XBRnmkj3nPiCYcjXlYds",
-              "userHandle": "MkW5dQ-nORke2_bSojvG_IUCgb975f3zBuP-L5odHcE"
+              "signature": "MEQCIEZp7T7t3S6uCPyS9f_e7DZxyp7FbrTJECRjJREgWvGwAiBdzjO4PYjK60hOyg2e5045KjlOh7A8ZSDUHvpBr4hVGQ",
+              "userHandle": "Cr8RjPJZMFJdOMF4uJV2qzafsO3tHLkAGZYCS5TS_LQ"
             }
           }
         },
@@ -889,7 +889,7 @@
         "body": {
           "options": {
             "rpId": "my-webpage-passkeys.vercel.app",
-            "challenge": "uP5ylQnmRsRjZHi4uNJChoxqk4O81foY7jLTs3p0Xx0",
+            "challenge": "pxUwDoE9PL3mY7Z1LdbBmI-Nyi6ShQ1L7Fd2mHbx_Qw",
             "timeout": 300000,
             "userVerification": "required"
           }
@@ -904,16 +904,16 @@
         "path": "/api/passkeys/login-verify",
         "body": {
           "response": {
-            "id": "4YwoA1tHWVEfnvhORJ_wo5Hh70UMgmE71BsLuXyEc8E",
-            "rawId": "4YwoA1tHWVEfnvhORJ_wo5Hh70UMgmE71BsLuXyEc8E",
+            "id": "ocZVuZ7jnC9NAseCD-sb0p8tErfCyNDxmQQpBulYzY8",
+            "rawId": "ocZVuZ7jnC9NAseCD-sb0p8tErfCyNDxmQQpBulYzY8",
             "type": "public-key",
             "clientExtensionResults": {},
             "authenticatorAttachment": "platform",
             "response": {
-              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uZ2V0IiwiY2hhbGxlbmdlIjoidVA1eWxRbm1Sc1JqWkhpNHVOSkNob3hxazRPODFmb1k3akxUczNwMFh4MCIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
+              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uZ2V0IiwiY2hhbGxlbmdlIjoicHhVd0RvRTlQTDNtWTdaMUxkYkJtSS1OeWk2U2hRMUw3RmQybUhieF9RdyIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
               "authenticatorData": "b5k92OBJZfrNl-XlKR1uRsMslFdnDKkCXNt4vkhqjlkFAAAAAQ",
-              "signature": "MEYCIQD6Z4WVpXC36cYzkvQUfgwTXAsyx1r4Mf8CTrpXzymQOQIhAKPccf_V25XdnyTR5BCDcg8SW4Xm_Lg2mAFKiRsdfVgs",
-              "userHandle": "MkW5dQ-nORke2_bSojvG_IUCgb975f3zBuP-L5odHcE"
+              "signature": "MEUCIAMx862wCpfSil06zjsOHbVVetlHow12k2FbnwiaDAH5AiEAilZ9R4rNc4oh1lcA_1j5nO3OCcFJbaWSfzT7T5H042o",
+              "userHandle": "Cr8RjPJZMFJdOMF4uJV2qzafsO3tHLkAGZYCS5TS_LQ"
             }
           }
         },
@@ -924,19 +924,19 @@
         "body": {
           "authenticated": true,
           "account": {
-            "id": "020fa3ba-af67-4c93-83fa-576c796d75e0",
-            "displayName": "연습 계정 020fa3ba"
+            "id": "92f40e91-2687-4aee-9319-eed4622dea02",
+            "displayName": "연습 계정 92f40e91"
           },
           "credentials": [
             {
-              "id": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+              "id": "h-Kv7TEEwL0coipafYDGNHpfOrY7zNeXas7el40sQ4k",
               "name": "테스트 A · 첫 번째 키",
-              "createdAt": "2026-09-11T02:00:55.709Z"
+              "createdAt": "2026-09-11T05:24:34.657Z"
             },
             {
-              "id": "4YwoA1tHWVEfnvhORJ_wo5Hh70UMgmE71BsLuXyEc8E",
+              "id": "ocZVuZ7jnC9NAseCD-sb0p8tErfCyNDxmQQpBulYzY8",
               "name": "테스트 A · 두 번째 키",
-              "createdAt": "2026-09-11T02:00:56.236Z"
+              "createdAt": "2026-09-11T05:24:34.978Z"
             }
           ]
         },
@@ -947,7 +947,7 @@
       "label": "첫 번째 키 삭제",
       "request": {
         "method": "DELETE",
-        "path": "/api/passkeys/credentials/p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+        "path": "/api/passkeys/credentials/h-Kv7TEEwL0coipafYDGNHpfOrY7zNeXas7el40sQ4k",
         "cookie": "[REDACTED]"
       },
       "response": {
@@ -955,14 +955,14 @@
         "body": {
           "authenticated": true,
           "account": {
-            "id": "020fa3ba-af67-4c93-83fa-576c796d75e0",
-            "displayName": "연습 계정 020fa3ba"
+            "id": "92f40e91-2687-4aee-9319-eed4622dea02",
+            "displayName": "연습 계정 92f40e91"
           },
           "credentials": [
             {
-              "id": "4YwoA1tHWVEfnvhORJ_wo5Hh70UMgmE71BsLuXyEc8E",
+              "id": "ocZVuZ7jnC9NAseCD-sb0p8tErfCyNDxmQQpBulYzY8",
               "name": "테스트 A · 두 번째 키",
-              "createdAt": "2026-09-11T02:00:56.236Z"
+              "createdAt": "2026-09-11T05:24:34.978Z"
             }
           ]
         },
@@ -982,7 +982,7 @@
         "body": {
           "options": {
             "rpId": "my-webpage-passkeys.vercel.app",
-            "challenge": "fWcA7O9F6f_sTNAdDq_mKsOzU6AF96QPrz2g_yn3pvU",
+            "challenge": "AAmPRc5Nj_iUrDmhuOP87-TR6Ztkgca0wnmpFKXzf-k",
             "timeout": 300000,
             "userVerification": "required"
           }
@@ -997,16 +997,16 @@
         "path": "/api/passkeys/login-verify",
         "body": {
           "response": {
-            "id": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
-            "rawId": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+            "id": "h-Kv7TEEwL0coipafYDGNHpfOrY7zNeXas7el40sQ4k",
+            "rawId": "h-Kv7TEEwL0coipafYDGNHpfOrY7zNeXas7el40sQ4k",
             "type": "public-key",
             "clientExtensionResults": {},
             "authenticatorAttachment": "platform",
             "response": {
-              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uZ2V0IiwiY2hhbGxlbmdlIjoiZldjQTdPOUY2Zl9zVE5BZERxX21Lc096VTZBRjk2UVByejJnX3luM3B2VSIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
+              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uZ2V0IiwiY2hhbGxlbmdlIjoiQUFtUFJjNU5qX2lVckRtaHVPUDg3LVRSNlp0a2djYTB3bm1wRktYemYtayIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
               "authenticatorData": "b5k92OBJZfrNl-XlKR1uRsMslFdnDKkCXNt4vkhqjlkFAAAAAw",
-              "signature": "MEYCIQDTVkItGrttCxRePqKtwLqG1j1yoqBZSajTaN4u8N1jnQIhAIlKHlRPrVB-uMcpraSVxVdAftsxbJ8mYF4-TKn3byDL",
-              "userHandle": "MkW5dQ-nORke2_bSojvG_IUCgb975f3zBuP-L5odHcE"
+              "signature": "MEUCIG7LQ_XuO8YdJ26CLPKSt6cyuBjP4VqjQLGzshBqBzYkAiEAvPDxyOXz9g_bM2C0OLszJGVJBJZ4-1Zjt2UY65F5jcQ",
+              "userHandle": "Cr8RjPJZMFJdOMF4uJV2qzafsO3tHLkAGZYCS5TS_LQ"
             }
           }
         },
@@ -1049,7 +1049,7 @@
         "body": {
           "options": {
             "rpId": "my-webpage-passkeys.vercel.app",
-            "challenge": "Wutz6wPefq4kGpLyY5Gx0Ivs-6bl1KzstV8XyQv_LTU",
+            "challenge": "e8Kw3lS1HhnAsK83OcTp1TXoJmnopaLpy78HwDQkjUY",
             "timeout": 300000,
             "userVerification": "required"
           }
@@ -1064,16 +1064,16 @@
         "path": "/api/passkeys/login-verify",
         "body": {
           "response": {
-            "id": "4YwoA1tHWVEfnvhORJ_wo5Hh70UMgmE71BsLuXyEc8E",
-            "rawId": "4YwoA1tHWVEfnvhORJ_wo5Hh70UMgmE71BsLuXyEc8E",
+            "id": "ocZVuZ7jnC9NAseCD-sb0p8tErfCyNDxmQQpBulYzY8",
+            "rawId": "ocZVuZ7jnC9NAseCD-sb0p8tErfCyNDxmQQpBulYzY8",
             "type": "public-key",
             "clientExtensionResults": {},
             "authenticatorAttachment": "platform",
             "response": {
-              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uZ2V0IiwiY2hhbGxlbmdlIjoiV3V0ejZ3UGVmcTRrR3BMeVk1R3gwSXZzLTZibDFLenN0VjhYeVF2X0xUVSIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
+              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uZ2V0IiwiY2hhbGxlbmdlIjoiZThLdzNsUzFIaG5Bc0s4M09jVHAxVFhvSm1ub3BhTHB5NzhId0RRa2pVWSIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
               "authenticatorData": "b5k92OBJZfrNl-XlKR1uRsMslFdnDKkCXNt4vkhqjlkFAAAAAg",
-              "signature": "MEYCIQCSCjXgggCAO9LiUdbRZrxF7rQl4ZWsSN_TMv2HoXvkUQIhAPxfz3-9Ushwq_oN6bsMvlBpN8yCr1kwwKcL8IOLPjmz",
-              "userHandle": "MkW5dQ-nORke2_bSojvG_IUCgb975f3zBuP-L5odHcE"
+              "signature": "MEUCIQDWAd0OOyGgxBg-wnUIkp8QfBr3swDIkEZtdW18r6ks9wIgQNEt_AygNGsZw4Ugx1c3MhpfcE740QOHNriP7HkCc0s",
+              "userHandle": "Cr8RjPJZMFJdOMF4uJV2qzafsO3tHLkAGZYCS5TS_LQ"
             }
           }
         },
@@ -1084,14 +1084,14 @@
         "body": {
           "authenticated": true,
           "account": {
-            "id": "020fa3ba-af67-4c93-83fa-576c796d75e0",
-            "displayName": "연습 계정 020fa3ba"
+            "id": "92f40e91-2687-4aee-9319-eed4622dea02",
+            "displayName": "연습 계정 92f40e91"
           },
           "credentials": [
             {
-              "id": "4YwoA1tHWVEfnvhORJ_wo5Hh70UMgmE71BsLuXyEc8E",
+              "id": "ocZVuZ7jnC9NAseCD-sb0p8tErfCyNDxmQQpBulYzY8",
               "name": "테스트 A · 두 번째 키",
-              "createdAt": "2026-09-11T02:00:56.236Z"
+              "createdAt": "2026-09-11T05:24:34.978Z"
             }
           ]
         },
@@ -1102,7 +1102,7 @@
       "label": "마지막 키 삭제",
       "request": {
         "method": "DELETE",
-        "path": "/api/passkeys/credentials/4YwoA1tHWVEfnvhORJ_wo5Hh70UMgmE71BsLuXyEc8E",
+        "path": "/api/passkeys/credentials/ocZVuZ7jnC9NAseCD-sb0p8tErfCyNDxmQQpBulYzY8",
         "cookie": "[REDACTED]"
       },
       "response": {
@@ -1132,7 +1132,7 @@
       "label": "테스트 B 정리",
       "request": {
         "method": "DELETE",
-        "path": "/api/passkeys/credentials/qR5HFXlwNqElGBpGQVlfj3RZjNFnQXqi3AgSpUurO9E",
+        "path": "/api/passkeys/credentials/w4gWLbZQrKQJAcr0P_5tleyEIm8c7vQqd6E7SMGEZbI",
         "cookie": "[REDACTED]"
       },
       "response": {
