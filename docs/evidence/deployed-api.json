@@ -1,0 +1,1147 @@
+{
+  "generatedAt": "2026-09-11T02:01:01.436Z",
+  "origin": "https://my-webpage-passkeys.vercel.app",
+  "method": "Actual HTTP requests to deployed API / Neon PostgreSQL using disposable P-256 software authenticators. Not physical-device or biometric evidence.",
+  "credentialsStorage": "Test-only in-memory software keys; actual Google/Apple/Windows/security-key storage remains user verification pending.",
+  "storedPublicKey": {
+    "format": "COSE P-256 public key, base64url",
+    "value": "pQECAyYgASFYIIYf4OOFSYgSbM3bX2Yjko07nsT885ylTHXWqdAhgCW-Ilgg9zhiYHkzotSBvc5rkaDKnMIEleMHnc-9gBmheYrwVD4",
+    "matchesAuthenticatorPublicKey": true
+  },
+  "crossAccountCounts": {
+    "before": {
+      "A": 3,
+      "B": 3
+    },
+    "after": {
+      "A": 3,
+      "B": 3
+    }
+  },
+  "cleanup": "All test accounts removed through last-key deletion",
+  "steps": [
+    {
+      "label": "비로그인 자료 요청",
+      "request": {
+        "method": "GET",
+        "path": "/api/passkeys/private",
+        "cookie": "none"
+      },
+      "response": {
+        "status": 401,
+        "body": {
+          "error": "패스키로 로그인해 주세요."
+        },
+        "setCookie": "none"
+      }
+    },
+    {
+      "label": "취소할 등록 요청 1",
+      "request": {
+        "method": "POST",
+        "path": "/api/passkeys/register-options",
+        "body": {
+          "name": "취소할 테스트"
+        },
+        "cookie": "none"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "options": {
+            "challenge": "idA3MCIXq6pZuF7M363iv8EFNHwTHtQRyzgm9iHwSDo",
+            "rp": {
+              "name": "패스키 · 나만의 연습 공간",
+              "id": "my-webpage-passkeys.vercel.app"
+            },
+            "user": {
+              "id": "FVc5LfZpATrm2Mng2QeIIXVsDCNfHE6nVwst3cvG4mo",
+              "name": "연습 계정 e1c6847a",
+              "displayName": "연습 계정 e1c6847a"
+            },
+            "pubKeyCredParams": [
+              {
+                "alg": -7,
+                "type": "public-key"
+              },
+              {
+                "alg": -257,
+                "type": "public-key"
+              }
+            ],
+            "timeout": 300000,
+            "attestation": "none",
+            "excludeCredentials": [],
+            "authenticatorSelection": {
+              "residentKey": "required",
+              "userVerification": "required",
+              "requireResidentKey": true
+            },
+            "extensions": {
+              "credProps": true
+            },
+            "hints": []
+          }
+        },
+        "setCookie": "[REDACTED]"
+      }
+    },
+    {
+      "label": "취소할 등록 요청 2",
+      "request": {
+        "method": "POST",
+        "path": "/api/passkeys/register-options",
+        "body": {
+          "name": "취소할 테스트"
+        },
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "options": {
+            "challenge": "SP2_2ARFwGPLWLH3EKHB9iCxEvZ1MKdU0q8VwR34hmA",
+            "rp": {
+              "name": "패스키 · 나만의 연습 공간",
+              "id": "my-webpage-passkeys.vercel.app"
+            },
+            "user": {
+              "id": "2KoE8NnaKsiIBt9L9mnDB9KmPd7F_yp5qnqri1mv_UA",
+              "name": "연습 계정 86eb42ec",
+              "displayName": "연습 계정 86eb42ec"
+            },
+            "pubKeyCredParams": [
+              {
+                "alg": -7,
+                "type": "public-key"
+              },
+              {
+                "alg": -257,
+                "type": "public-key"
+              }
+            ],
+            "timeout": 300000,
+            "attestation": "none",
+            "excludeCredentials": [],
+            "authenticatorSelection": {
+              "residentKey": "required",
+              "userVerification": "required",
+              "requireResidentKey": true
+            },
+            "extensions": {
+              "credProps": true
+            },
+            "hints": []
+          }
+        },
+        "setCookie": "[REDACTED]"
+      }
+    },
+    {
+      "label": "등록 취소",
+      "request": {
+        "method": "POST",
+        "path": "/api/passkeys/cancel",
+        "body": {},
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "cancelled": true
+        },
+        "setCookie": "[REDACTED]"
+      }
+    },
+    {
+      "label": "테스트 A · 첫 번째 키 등록 challenge",
+      "request": {
+        "method": "POST",
+        "path": "/api/passkeys/register-options",
+        "body": {
+          "name": "테스트 A · 첫 번째 키"
+        },
+        "cookie": "none"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "options": {
+            "challenge": "l-skm_AVIrspRVCE67KbI_r2qnRARbJPr11MOeZwRmY",
+            "rp": {
+              "name": "패스키 · 나만의 연습 공간",
+              "id": "my-webpage-passkeys.vercel.app"
+            },
+            "user": {
+              "id": "MkW5dQ-nORke2_bSojvG_IUCgb975f3zBuP-L5odHcE",
+              "name": "연습 계정 020fa3ba",
+              "displayName": "연습 계정 020fa3ba"
+            },
+            "pubKeyCredParams": [
+              {
+                "alg": -7,
+                "type": "public-key"
+              },
+              {
+                "alg": -257,
+                "type": "public-key"
+              }
+            ],
+            "timeout": 300000,
+            "attestation": "none",
+            "excludeCredentials": [],
+            "authenticatorSelection": {
+              "residentKey": "required",
+              "userVerification": "required",
+              "requireResidentKey": true
+            },
+            "extensions": {
+              "credProps": true
+            },
+            "hints": []
+          }
+        },
+        "setCookie": "[REDACTED]"
+      }
+    },
+    {
+      "label": "테스트 A · 첫 번째 키 등록 검증",
+      "request": {
+        "method": "POST",
+        "path": "/api/passkeys/register-verify",
+        "body": {
+          "response": {
+            "id": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+            "rawId": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+            "type": "public-key",
+            "clientExtensionResults": {
+              "credProps": {
+                "rk": true
+              }
+            },
+            "authenticatorAttachment": "platform",
+            "response": {
+              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uY3JlYXRlIiwiY2hhbGxlbmdlIjoibC1za21fQVZJcnNwUlZDRTY3S2JJX3IycW5SQVJiSlByMTFNT2Vad1JtWSIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
+              "attestationObject": "o2NmbXRkbm9uZWhhdXRoRGF0YVikb5k92OBJZfrNl-XlKR1uRsMslFdnDKkCXNt4vkhqjllFAAAAAAAAAAAAAAAAAAAAAAAAAAAAIKdQKqLDQM274XB-aMxsfwncbbzjzGy55b5K31T7hxp1pQECAyYgASFYIIYf4OOFSYgSbM3bX2Yjko07nsT885ylTHXWqdAhgCW-Ilgg9zhiYHkzotSBvc5rkaDKnMIEleMHnc-9gBmheYrwVD5nYXR0U3RtdKA",
+              "transports": [
+                "internal"
+              ]
+            }
+          }
+        },
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "authenticated": true,
+          "account": {
+            "id": "020fa3ba-af67-4c93-83fa-576c796d75e0",
+            "displayName": "연습 계정 020fa3ba"
+          },
+          "credentials": [
+            {
+              "id": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+              "name": "테스트 A · 첫 번째 키",
+              "createdAt": "2026-09-11T02:00:55.709Z"
+            }
+          ]
+        },
+        "setCookie": "[REDACTED]"
+      }
+    },
+    {
+      "label": "테스트 A · 두 번째 키 등록 challenge",
+      "request": {
+        "method": "POST",
+        "path": "/api/passkeys/register-options",
+        "body": {
+          "name": "테스트 A · 두 번째 키"
+        },
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "options": {
+            "challenge": "WFfO_siWUrTy4BOwxdHYWEeHT24DqiqoiA_ui4Q8fco",
+            "rp": {
+              "name": "패스키 · 나만의 연습 공간",
+              "id": "my-webpage-passkeys.vercel.app"
+            },
+            "user": {
+              "id": "MkW5dQ-nORke2_bSojvG_IUCgb975f3zBuP-L5odHcE",
+              "name": "연습 계정 020fa3ba",
+              "displayName": "연습 계정 020fa3ba"
+            },
+            "pubKeyCredParams": [
+              {
+                "alg": -7,
+                "type": "public-key"
+              },
+              {
+                "alg": -257,
+                "type": "public-key"
+              }
+            ],
+            "timeout": 300000,
+            "attestation": "none",
+            "excludeCredentials": [
+              {
+                "id": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+                "type": "public-key"
+              }
+            ],
+            "authenticatorSelection": {
+              "residentKey": "required",
+              "userVerification": "required",
+              "requireResidentKey": true
+            },
+            "extensions": {
+              "credProps": true
+            },
+            "hints": []
+          }
+        },
+        "setCookie": "[REDACTED]"
+      }
+    },
+    {
+      "label": "테스트 A · 두 번째 키 등록 검증",
+      "request": {
+        "method": "POST",
+        "path": "/api/passkeys/register-verify",
+        "body": {
+          "response": {
+            "id": "4YwoA1tHWVEfnvhORJ_wo5Hh70UMgmE71BsLuXyEc8E",
+            "rawId": "4YwoA1tHWVEfnvhORJ_wo5Hh70UMgmE71BsLuXyEc8E",
+            "type": "public-key",
+            "clientExtensionResults": {
+              "credProps": {
+                "rk": true
+              }
+            },
+            "authenticatorAttachment": "platform",
+            "response": {
+              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uY3JlYXRlIiwiY2hhbGxlbmdlIjoiV0ZmT19zaVdVclR5NEJPd3hkSFlXRWVIVDI0RHFpcW9pQV91aTRROGZjbyIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
+              "attestationObject": "o2NmbXRkbm9uZWhhdXRoRGF0YVikb5k92OBJZfrNl-XlKR1uRsMslFdnDKkCXNt4vkhqjllFAAAAAAAAAAAAAAAAAAAAAAAAAAAAIOGMKANbR1lRH574TkSf8KOR4e9FDIJhO9QbC7l8hHPBpQECAyYgASFYIOj4daaxA729f6qJ6fAfPh2t6fqWSCrGWYCJOUQgerfcIlggI7CugFzkBY1nVHDJG5Dx3fmOhHZ1jny0M7PoyhjwGPxnYXR0U3RtdKA",
+              "transports": [
+                "internal"
+              ]
+            }
+          }
+        },
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "authenticated": true,
+          "account": {
+            "id": "020fa3ba-af67-4c93-83fa-576c796d75e0",
+            "displayName": "연습 계정 020fa3ba"
+          },
+          "credentials": [
+            {
+              "id": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+              "name": "테스트 A · 첫 번째 키",
+              "createdAt": "2026-09-11T02:00:55.709Z"
+            },
+            {
+              "id": "4YwoA1tHWVEfnvhORJ_wo5Hh70UMgmE71BsLuXyEc8E",
+              "name": "테스트 A · 두 번째 키",
+              "createdAt": "2026-09-11T02:00:56.236Z"
+            }
+          ]
+        },
+        "setCookie": "[REDACTED]"
+      }
+    },
+    {
+      "label": "테스트 B · 첫 번째 키 등록 challenge",
+      "request": {
+        "method": "POST",
+        "path": "/api/passkeys/register-options",
+        "body": {
+          "name": "테스트 B · 첫 번째 키"
+        },
+        "cookie": "none"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "options": {
+            "challenge": "lqgSdj8pPCdMjrShMrlsRw26ACZNrdnBoSGFq9i40Pc",
+            "rp": {
+              "name": "패스키 · 나만의 연습 공간",
+              "id": "my-webpage-passkeys.vercel.app"
+            },
+            "user": {
+              "id": "Sxj8xP3zrkHNKRKT4JWwqoYQ4psvl4f4Agsxj04xRzI",
+              "name": "연습 계정 dfd97830",
+              "displayName": "연습 계정 dfd97830"
+            },
+            "pubKeyCredParams": [
+              {
+                "alg": -7,
+                "type": "public-key"
+              },
+              {
+                "alg": -257,
+                "type": "public-key"
+              }
+            ],
+            "timeout": 300000,
+            "attestation": "none",
+            "excludeCredentials": [],
+            "authenticatorSelection": {
+              "residentKey": "required",
+              "userVerification": "required",
+              "requireResidentKey": true
+            },
+            "extensions": {
+              "credProps": true
+            },
+            "hints": []
+          }
+        },
+        "setCookie": "[REDACTED]"
+      }
+    },
+    {
+      "label": "테스트 B · 첫 번째 키 등록 검증",
+      "request": {
+        "method": "POST",
+        "path": "/api/passkeys/register-verify",
+        "body": {
+          "response": {
+            "id": "qR5HFXlwNqElGBpGQVlfj3RZjNFnQXqi3AgSpUurO9E",
+            "rawId": "qR5HFXlwNqElGBpGQVlfj3RZjNFnQXqi3AgSpUurO9E",
+            "type": "public-key",
+            "clientExtensionResults": {
+              "credProps": {
+                "rk": true
+              }
+            },
+            "authenticatorAttachment": "platform",
+            "response": {
+              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uY3JlYXRlIiwiY2hhbGxlbmdlIjoibHFnU2RqOHBQQ2RNanJTaE1ybHNSdzI2QUNaTnJkbkJvU0dGcTlpNDBQYyIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
+              "attestationObject": "o2NmbXRkbm9uZWhhdXRoRGF0YVikb5k92OBJZfrNl-XlKR1uRsMslFdnDKkCXNt4vkhqjllFAAAAAAAAAAAAAAAAAAAAAAAAAAAAIKkeRxV5cDahJRgaRkFZX490WYzRZ0F6otwIEqVLqzvRpQECAyYgASFYIIGCw6Bkhgt90C7hlStXwtwRuY6DP08WselNz0YfmmyaIlggrPusfW_-JqV3BvJ_wsOxrwwzuVkNCWo_QLLQ2GqkteFnYXR0U3RtdKA",
+              "transports": [
+                "internal"
+              ]
+            }
+          }
+        },
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "authenticated": true,
+          "account": {
+            "id": "dfd97830-56be-4d14-8e1f-cb58db95c4b3",
+            "displayName": "연습 계정 dfd97830"
+          },
+          "credentials": [
+            {
+              "id": "qR5HFXlwNqElGBpGQVlfj3RZjNFnQXqi3AgSpUurO9E",
+              "name": "테스트 B · 첫 번째 키",
+              "createdAt": "2026-09-11T02:00:56.745Z"
+            }
+          ]
+        },
+        "setCookie": "[REDACTED]"
+      }
+    },
+    {
+      "label": "A 자기 자료",
+      "request": {
+        "method": "GET",
+        "path": "/api/passkeys/private",
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "account": {
+            "id": "020fa3ba-af67-4c93-83fa-576c796d75e0",
+            "displayName": "연습 계정 020fa3ba"
+          },
+          "items": [
+            {
+              "id": "f71504d8-2518-4bbf-ad55-eb20124469c0",
+              "title": "나의 연습 노트",
+              "body": "연습 계정 020fa3ba의 가상 기록 020fa3ba-A입니다. 오늘은 로그인한 사람에게만 자료를 보여 주는 흐름을 연습했습니다."
+            },
+            {
+              "id": "11ed1ce6-7daf-4af1-890f-f29764039231",
+              "title": "다음 학습 계획",
+              "body": "연습 계정 020fa3ba의 가상 계획 020fa3ba-B입니다. 다음 시간에는 두 번째 패스키를 등록하고 기기를 바꿔 로그인할 예정입니다."
+            },
+            {
+              "id": "337c8e5a-f6d0-45ae-beed-f347f316ea20",
+              "title": "프로젝트 아이디어",
+              "body": "연습 계정 020fa3ba의 가상 아이디어 020fa3ba-C입니다. 개인 학습 자료를 계정별로 보관하는 작은 앱을 구상했습니다."
+            }
+          ]
+        },
+        "setCookie": "none"
+      }
+    },
+    {
+      "label": "B 자기 자료",
+      "request": {
+        "method": "GET",
+        "path": "/api/passkeys/private",
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "account": {
+            "id": "dfd97830-56be-4d14-8e1f-cb58db95c4b3",
+            "displayName": "연습 계정 dfd97830"
+          },
+          "items": [
+            {
+              "id": "1607769a-6680-4d99-9a1d-9a0176e9fcc2",
+              "title": "나의 연습 노트",
+              "body": "연습 계정 dfd97830의 가상 기록 dfd97830-A입니다. 오늘은 로그인한 사람에게만 자료를 보여 주는 흐름을 연습했습니다."
+            },
+            {
+              "id": "46061f96-cb40-41cf-baeb-ed3c2a2df235",
+              "title": "다음 학습 계획",
+              "body": "연습 계정 dfd97830의 가상 계획 dfd97830-B입니다. 다음 시간에는 두 번째 패스키를 등록하고 기기를 바꿔 로그인할 예정입니다."
+            },
+            {
+              "id": "fd83ddcc-2167-4ac2-a39e-fe633188c2a8",
+              "title": "프로젝트 아이디어",
+              "body": "연습 계정 dfd97830의 가상 아이디어 dfd97830-C입니다. 개인 학습 자료를 계정별로 보관하는 작은 앱을 구상했습니다."
+            }
+          ]
+        },
+        "setCookie": "none"
+      }
+    },
+    {
+      "label": "A에서 B 자료 접근 거절",
+      "request": {
+        "method": "GET",
+        "path": "/api/passkeys/private/1607769a-6680-4d99-9a1d-9a0176e9fcc2",
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 403,
+        "body": {
+          "error": "이 자료를 열람할 권한이 없습니다."
+        },
+        "setCookie": "none"
+      }
+    },
+    {
+      "label": "B에서 A 자료 접근 거절",
+      "request": {
+        "method": "GET",
+        "path": "/api/passkeys/private/f71504d8-2518-4bbf-ad55-eb20124469c0",
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 403,
+        "body": {
+          "error": "이 자료를 열람할 권한이 없습니다."
+        },
+        "setCookie": "none"
+      }
+    },
+    {
+      "label": "교차 요청 후 A 자료 건수",
+      "request": {
+        "method": "GET",
+        "path": "/api/passkeys/private",
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "account": {
+            "id": "020fa3ba-af67-4c93-83fa-576c796d75e0",
+            "displayName": "연습 계정 020fa3ba"
+          },
+          "items": [
+            {
+              "id": "f71504d8-2518-4bbf-ad55-eb20124469c0",
+              "title": "나의 연습 노트",
+              "body": "연습 계정 020fa3ba의 가상 기록 020fa3ba-A입니다. 오늘은 로그인한 사람에게만 자료를 보여 주는 흐름을 연습했습니다."
+            },
+            {
+              "id": "11ed1ce6-7daf-4af1-890f-f29764039231",
+              "title": "다음 학습 계획",
+              "body": "연습 계정 020fa3ba의 가상 계획 020fa3ba-B입니다. 다음 시간에는 두 번째 패스키를 등록하고 기기를 바꿔 로그인할 예정입니다."
+            },
+            {
+              "id": "337c8e5a-f6d0-45ae-beed-f347f316ea20",
+              "title": "프로젝트 아이디어",
+              "body": "연습 계정 020fa3ba의 가상 아이디어 020fa3ba-C입니다. 개인 학습 자료를 계정별로 보관하는 작은 앱을 구상했습니다."
+            }
+          ]
+        },
+        "setCookie": "none"
+      }
+    },
+    {
+      "label": "교차 요청 후 B 자료 건수",
+      "request": {
+        "method": "GET",
+        "path": "/api/passkeys/private",
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "account": {
+            "id": "dfd97830-56be-4d14-8e1f-cb58db95c4b3",
+            "displayName": "연습 계정 dfd97830"
+          },
+          "items": [
+            {
+              "id": "1607769a-6680-4d99-9a1d-9a0176e9fcc2",
+              "title": "나의 연습 노트",
+              "body": "연습 계정 dfd97830의 가상 기록 dfd97830-A입니다. 오늘은 로그인한 사람에게만 자료를 보여 주는 흐름을 연습했습니다."
+            },
+            {
+              "id": "46061f96-cb40-41cf-baeb-ed3c2a2df235",
+              "title": "다음 학습 계획",
+              "body": "연습 계정 dfd97830의 가상 계획 dfd97830-B입니다. 다음 시간에는 두 번째 패스키를 등록하고 기기를 바꿔 로그인할 예정입니다."
+            },
+            {
+              "id": "fd83ddcc-2167-4ac2-a39e-fe633188c2a8",
+              "title": "프로젝트 아이디어",
+              "body": "연습 계정 dfd97830의 가상 아이디어 dfd97830-C입니다. 개인 학습 자료를 계정별로 보관하는 작은 앱을 구상했습니다."
+            }
+          ]
+        },
+        "setCookie": "none"
+      }
+    },
+    {
+      "label": "쿼리 계정 위조 무시",
+      "request": {
+        "method": "GET",
+        "path": "/api/passkeys/private?accountId=dfd97830-56be-4d14-8e1f-cb58db95c4b3",
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "account": {
+            "id": "020fa3ba-af67-4c93-83fa-576c796d75e0",
+            "displayName": "연습 계정 020fa3ba"
+          },
+          "items": [
+            {
+              "id": "f71504d8-2518-4bbf-ad55-eb20124469c0",
+              "title": "나의 연습 노트",
+              "body": "연습 계정 020fa3ba의 가상 기록 020fa3ba-A입니다. 오늘은 로그인한 사람에게만 자료를 보여 주는 흐름을 연습했습니다."
+            },
+            {
+              "id": "11ed1ce6-7daf-4af1-890f-f29764039231",
+              "title": "다음 학습 계획",
+              "body": "연습 계정 020fa3ba의 가상 계획 020fa3ba-B입니다. 다음 시간에는 두 번째 패스키를 등록하고 기기를 바꿔 로그인할 예정입니다."
+            },
+            {
+              "id": "337c8e5a-f6d0-45ae-beed-f347f316ea20",
+              "title": "프로젝트 아이디어",
+              "body": "연습 계정 020fa3ba의 가상 아이디어 020fa3ba-C입니다. 개인 학습 자료를 계정별로 보관하는 작은 앱을 구상했습니다."
+            }
+          ]
+        },
+        "setCookie": "none"
+      }
+    },
+    {
+      "label": "본문 계정 위조 무시",
+      "request": {
+        "method": "POST",
+        "path": "/api/passkeys/private",
+        "body": {
+          "accountId": "dfd97830-56be-4d14-8e1f-cb58db95c4b3"
+        },
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "account": {
+            "id": "020fa3ba-af67-4c93-83fa-576c796d75e0",
+            "displayName": "연습 계정 020fa3ba"
+          },
+          "items": [
+            {
+              "id": "f71504d8-2518-4bbf-ad55-eb20124469c0",
+              "title": "나의 연습 노트",
+              "body": "연습 계정 020fa3ba의 가상 기록 020fa3ba-A입니다. 오늘은 로그인한 사람에게만 자료를 보여 주는 흐름을 연습했습니다."
+            },
+            {
+              "id": "11ed1ce6-7daf-4af1-890f-f29764039231",
+              "title": "다음 학습 계획",
+              "body": "연습 계정 020fa3ba의 가상 계획 020fa3ba-B입니다. 다음 시간에는 두 번째 패스키를 등록하고 기기를 바꿔 로그인할 예정입니다."
+            },
+            {
+              "id": "337c8e5a-f6d0-45ae-beed-f347f316ea20",
+              "title": "프로젝트 아이디어",
+              "body": "연습 계정 020fa3ba의 가상 아이디어 020fa3ba-C입니다. 개인 학습 자료를 계정별로 보관하는 작은 앱을 구상했습니다."
+            }
+          ]
+        },
+        "setCookie": "none"
+      }
+    },
+    {
+      "label": "로그아웃",
+      "request": {
+        "method": "POST",
+        "path": "/api/passkeys/logout",
+        "body": {},
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "authenticated": false
+        },
+        "setCookie": "[REDACTED]"
+      }
+    },
+    {
+      "label": "로그아웃 세션 재사용 거절",
+      "request": {
+        "method": "GET",
+        "path": "/api/passkeys/private",
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 401,
+        "body": {
+          "error": "패스키로 로그인해 주세요."
+        },
+        "setCookie": "none"
+      }
+    },
+    {
+      "label": "정상 서명 로그인 challenge",
+      "request": {
+        "method": "POST",
+        "path": "/api/passkeys/login-options",
+        "body": {},
+        "cookie": "none"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "options": {
+            "rpId": "my-webpage-passkeys.vercel.app",
+            "challenge": "vH3Zakbsnx7YPrY7T4xHds9UA5Ml2Jp3nN4nd-CHcWg",
+            "timeout": 300000,
+            "userVerification": "required"
+          }
+        },
+        "setCookie": "[REDACTED]"
+      }
+    },
+    {
+      "label": "정상 서명 로그인",
+      "request": {
+        "method": "POST",
+        "path": "/api/passkeys/login-verify",
+        "body": {
+          "response": {
+            "id": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+            "rawId": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+            "type": "public-key",
+            "clientExtensionResults": {},
+            "authenticatorAttachment": "platform",
+            "response": {
+              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uZ2V0IiwiY2hhbGxlbmdlIjoidkgzWmFrYnNueDdZUHJZN1Q0eEhkczlVQTVNbDJKcDNuTjRuZC1DSGNXZyIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
+              "authenticatorData": "b5k92OBJZfrNl-XlKR1uRsMslFdnDKkCXNt4vkhqjlkFAAAAAQ",
+              "signature": "MEUCIBX9L-yLKzJDvrEdYp2_JaFejjJ-VWH1RnZwhHDs41YIAiEAzkejXuxhYMxE_HGzUpYP7Cqn-j_75VpAMHKVdOssMuk",
+              "userHandle": "MkW5dQ-nORke2_bSojvG_IUCgb975f3zBuP-L5odHcE"
+            }
+          }
+        },
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "authenticated": true,
+          "account": {
+            "id": "020fa3ba-af67-4c93-83fa-576c796d75e0",
+            "displayName": "연습 계정 020fa3ba"
+          },
+          "credentials": [
+            {
+              "id": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+              "name": "테스트 A · 첫 번째 키",
+              "createdAt": "2026-09-11T02:00:55.709Z"
+            },
+            {
+              "id": "4YwoA1tHWVEfnvhORJ_wo5Hh70UMgmE71BsLuXyEc8E",
+              "name": "테스트 A · 두 번째 키",
+              "createdAt": "2026-09-11T02:00:56.236Z"
+            }
+          ]
+        },
+        "setCookie": "[REDACTED]"
+      }
+    },
+    {
+      "label": "사용된 challenge 재사용 거절",
+      "request": {
+        "method": "POST",
+        "path": "/api/passkeys/login-verify",
+        "body": {
+          "response": {
+            "id": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+            "rawId": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+            "type": "public-key",
+            "clientExtensionResults": {},
+            "authenticatorAttachment": "platform",
+            "response": {
+              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uZ2V0IiwiY2hhbGxlbmdlIjoidkgzWmFrYnNueDdZUHJZN1Q0eEhkczlVQTVNbDJKcDNuTjRuZC1DSGNXZyIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
+              "authenticatorData": "b5k92OBJZfrNl-XlKR1uRsMslFdnDKkCXNt4vkhqjlkFAAAAAQ",
+              "signature": "MEUCIBX9L-yLKzJDvrEdYp2_JaFejjJ-VWH1RnZwhHDs41YIAiEAzkejXuxhYMxE_HGzUpYP7Cqn-j_75VpAMHKVdOssMuk",
+              "userHandle": "MkW5dQ-nORke2_bSojvG_IUCgb975f3zBuP-L5odHcE"
+            }
+          }
+        },
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 401,
+        "body": {
+          "error": "이미 사용했거나 만료된 인증 요청입니다. 다시 시작해 주세요."
+        },
+        "setCookie": "[REDACTED]"
+      }
+    },
+    {
+      "label": "잘못된 서명 거절 challenge",
+      "request": {
+        "method": "POST",
+        "path": "/api/passkeys/login-options",
+        "body": {},
+        "cookie": "none"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "options": {
+            "rpId": "my-webpage-passkeys.vercel.app",
+            "challenge": "ysKwM8yiyce5cZd912x2sKLj40phhUXfLq2UIZVHzh8",
+            "timeout": 300000,
+            "userVerification": "required"
+          }
+        },
+        "setCookie": "[REDACTED]"
+      }
+    },
+    {
+      "label": "잘못된 서명 거절",
+      "request": {
+        "method": "POST",
+        "path": "/api/passkeys/login-verify",
+        "body": {
+          "response": {
+            "id": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+            "rawId": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+            "type": "public-key",
+            "clientExtensionResults": {},
+            "authenticatorAttachment": "platform",
+            "response": {
+              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uZ2V0IiwiY2hhbGxlbmdlIjoieXNLd004eWl5Y2U1Y1pkOTEyeDJzS0xqNDBwaGhVWGZMcTJVSVpWSHpoOCIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
+              "authenticatorData": "b5k92OBJZfrNl-XlKR1uRsMslFdnDKkCXNt4vkhqjlkFAAAAAg",
+              "signature": "MEUCIQD6Mwj9QltQIgCa_ZdBQJzzp4FltFy6q4ilCnNYm3xQZAIgAMLeNtUmW9W0LlNsU4o4Uc1XBRnmkj3nPiCYcjXlYds",
+              "userHandle": "MkW5dQ-nORke2_bSojvG_IUCgb975f3zBuP-L5odHcE"
+            }
+          }
+        },
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 401,
+        "body": {
+          "error": "패스키 서명을 확인하지 못했습니다. 다시 로그인해 주세요."
+        },
+        "setCookie": "[REDACTED]"
+      }
+    },
+    {
+      "label": "두 번째 키 로그인 challenge",
+      "request": {
+        "method": "POST",
+        "path": "/api/passkeys/login-options",
+        "body": {},
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "options": {
+            "rpId": "my-webpage-passkeys.vercel.app",
+            "challenge": "uP5ylQnmRsRjZHi4uNJChoxqk4O81foY7jLTs3p0Xx0",
+            "timeout": 300000,
+            "userVerification": "required"
+          }
+        },
+        "setCookie": "[REDACTED]"
+      }
+    },
+    {
+      "label": "두 번째 키 로그인",
+      "request": {
+        "method": "POST",
+        "path": "/api/passkeys/login-verify",
+        "body": {
+          "response": {
+            "id": "4YwoA1tHWVEfnvhORJ_wo5Hh70UMgmE71BsLuXyEc8E",
+            "rawId": "4YwoA1tHWVEfnvhORJ_wo5Hh70UMgmE71BsLuXyEc8E",
+            "type": "public-key",
+            "clientExtensionResults": {},
+            "authenticatorAttachment": "platform",
+            "response": {
+              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uZ2V0IiwiY2hhbGxlbmdlIjoidVA1eWxRbm1Sc1JqWkhpNHVOSkNob3hxazRPODFmb1k3akxUczNwMFh4MCIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
+              "authenticatorData": "b5k92OBJZfrNl-XlKR1uRsMslFdnDKkCXNt4vkhqjlkFAAAAAQ",
+              "signature": "MEYCIQD6Z4WVpXC36cYzkvQUfgwTXAsyx1r4Mf8CTrpXzymQOQIhAKPccf_V25XdnyTR5BCDcg8SW4Xm_Lg2mAFKiRsdfVgs",
+              "userHandle": "MkW5dQ-nORke2_bSojvG_IUCgb975f3zBuP-L5odHcE"
+            }
+          }
+        },
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "authenticated": true,
+          "account": {
+            "id": "020fa3ba-af67-4c93-83fa-576c796d75e0",
+            "displayName": "연습 계정 020fa3ba"
+          },
+          "credentials": [
+            {
+              "id": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+              "name": "테스트 A · 첫 번째 키",
+              "createdAt": "2026-09-11T02:00:55.709Z"
+            },
+            {
+              "id": "4YwoA1tHWVEfnvhORJ_wo5Hh70UMgmE71BsLuXyEc8E",
+              "name": "테스트 A · 두 번째 키",
+              "createdAt": "2026-09-11T02:00:56.236Z"
+            }
+          ]
+        },
+        "setCookie": "[REDACTED]"
+      }
+    },
+    {
+      "label": "첫 번째 키 삭제",
+      "request": {
+        "method": "DELETE",
+        "path": "/api/passkeys/credentials/p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "authenticated": true,
+          "account": {
+            "id": "020fa3ba-af67-4c93-83fa-576c796d75e0",
+            "displayName": "연습 계정 020fa3ba"
+          },
+          "credentials": [
+            {
+              "id": "4YwoA1tHWVEfnvhORJ_wo5Hh70UMgmE71BsLuXyEc8E",
+              "name": "테스트 A · 두 번째 키",
+              "createdAt": "2026-09-11T02:00:56.236Z"
+            }
+          ]
+        },
+        "setCookie": "none"
+      }
+    },
+    {
+      "label": "삭제한 키 로그인 거절 challenge",
+      "request": {
+        "method": "POST",
+        "path": "/api/passkeys/login-options",
+        "body": {},
+        "cookie": "none"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "options": {
+            "rpId": "my-webpage-passkeys.vercel.app",
+            "challenge": "fWcA7O9F6f_sTNAdDq_mKsOzU6AF96QPrz2g_yn3pvU",
+            "timeout": 300000,
+            "userVerification": "required"
+          }
+        },
+        "setCookie": "[REDACTED]"
+      }
+    },
+    {
+      "label": "삭제한 키 로그인 거절",
+      "request": {
+        "method": "POST",
+        "path": "/api/passkeys/login-verify",
+        "body": {
+          "response": {
+            "id": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+            "rawId": "p1AqosNAzbvhcH5ozGx_CdxtvOPMbLnlvkrfVPuHGnU",
+            "type": "public-key",
+            "clientExtensionResults": {},
+            "authenticatorAttachment": "platform",
+            "response": {
+              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uZ2V0IiwiY2hhbGxlbmdlIjoiZldjQTdPOUY2Zl9zVE5BZERxX21Lc096VTZBRjk2UVByejJnX3luM3B2VSIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
+              "authenticatorData": "b5k92OBJZfrNl-XlKR1uRsMslFdnDKkCXNt4vkhqjlkFAAAAAw",
+              "signature": "MEYCIQDTVkItGrttCxRePqKtwLqG1j1yoqBZSajTaN4u8N1jnQIhAIlKHlRPrVB-uMcpraSVxVdAftsxbJ8mYF4-TKn3byDL",
+              "userHandle": "MkW5dQ-nORke2_bSojvG_IUCgb975f3zBuP-L5odHcE"
+            }
+          }
+        },
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 401,
+        "body": {
+          "error": "등록된 패스키로 인증하지 못했습니다."
+        },
+        "setCookie": "[REDACTED]"
+      }
+    },
+    {
+      "label": "남은 키 로그인 전 로그아웃",
+      "request": {
+        "method": "POST",
+        "path": "/api/passkeys/logout",
+        "body": {},
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "authenticated": false
+        },
+        "setCookie": "[REDACTED]"
+      }
+    },
+    {
+      "label": "삭제 뒤 남은 키 로그인 성공 challenge",
+      "request": {
+        "method": "POST",
+        "path": "/api/passkeys/login-options",
+        "body": {},
+        "cookie": "none"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "options": {
+            "rpId": "my-webpage-passkeys.vercel.app",
+            "challenge": "Wutz6wPefq4kGpLyY5Gx0Ivs-6bl1KzstV8XyQv_LTU",
+            "timeout": 300000,
+            "userVerification": "required"
+          }
+        },
+        "setCookie": "[REDACTED]"
+      }
+    },
+    {
+      "label": "삭제 뒤 남은 키 로그인 성공",
+      "request": {
+        "method": "POST",
+        "path": "/api/passkeys/login-verify",
+        "body": {
+          "response": {
+            "id": "4YwoA1tHWVEfnvhORJ_wo5Hh70UMgmE71BsLuXyEc8E",
+            "rawId": "4YwoA1tHWVEfnvhORJ_wo5Hh70UMgmE71BsLuXyEc8E",
+            "type": "public-key",
+            "clientExtensionResults": {},
+            "authenticatorAttachment": "platform",
+            "response": {
+              "clientDataJSON": "eyJ0eXBlIjoid2ViYXV0aG4uZ2V0IiwiY2hhbGxlbmdlIjoiV3V0ejZ3UGVmcTRrR3BMeVk1R3gwSXZzLTZibDFLenN0VjhYeVF2X0xUVSIsIm9yaWdpbiI6Imh0dHBzOi8vbXktd2VicGFnZS1wYXNza2V5cy52ZXJjZWwuYXBwIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ",
+              "authenticatorData": "b5k92OBJZfrNl-XlKR1uRsMslFdnDKkCXNt4vkhqjlkFAAAAAg",
+              "signature": "MEYCIQCSCjXgggCAO9LiUdbRZrxF7rQl4ZWsSN_TMv2HoXvkUQIhAPxfz3-9Ushwq_oN6bsMvlBpN8yCr1kwwKcL8IOLPjmz",
+              "userHandle": "MkW5dQ-nORke2_bSojvG_IUCgb975f3zBuP-L5odHcE"
+            }
+          }
+        },
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "authenticated": true,
+          "account": {
+            "id": "020fa3ba-af67-4c93-83fa-576c796d75e0",
+            "displayName": "연습 계정 020fa3ba"
+          },
+          "credentials": [
+            {
+              "id": "4YwoA1tHWVEfnvhORJ_wo5Hh70UMgmE71BsLuXyEc8E",
+              "name": "테스트 A · 두 번째 키",
+              "createdAt": "2026-09-11T02:00:56.236Z"
+            }
+          ]
+        },
+        "setCookie": "[REDACTED]"
+      }
+    },
+    {
+      "label": "마지막 키 삭제",
+      "request": {
+        "method": "DELETE",
+        "path": "/api/passkeys/credentials/4YwoA1tHWVEfnvhORJ_wo5Hh70UMgmE71BsLuXyEc8E",
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "authenticated": false
+        },
+        "setCookie": "[REDACTED]"
+      }
+    },
+    {
+      "label": "마지막 키 삭제 후 세션 거절",
+      "request": {
+        "method": "GET",
+        "path": "/api/passkeys/private",
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 401,
+        "body": {
+          "error": "패스키로 로그인해 주세요."
+        },
+        "setCookie": "none"
+      }
+    },
+    {
+      "label": "테스트 B 정리",
+      "request": {
+        "method": "DELETE",
+        "path": "/api/passkeys/credentials/qR5HFXlwNqElGBpGQVlfj3RZjNFnQXqi3AgSpUurO9E",
+        "cookie": "[REDACTED]"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "authenticated": false
+        },
+        "setCookie": "[REDACTED]"
+      }
+    }
+  ]
+}

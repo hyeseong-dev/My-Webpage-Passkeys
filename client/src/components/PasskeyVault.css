@@ -1,0 +1,87 @@
+.public-area-label { display: inline-flex; align-items: center; gap: 9px; margin: 0 0 20px; color: var(--sage-deep); font-size: .68rem; font-weight: 700; letter-spacing: .14em; }
+.public-area-label::before { width: 6px; height: 6px; border-radius: 50%; background: var(--sage); content: ""; }
+.passkey-vault { margin-top: 62px; padding-top: 35px; border-top: 1px solid var(--line); scroll-margin-top: 30px; }
+.vault-heading-row { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.vault-heading-row .section-heading > p { color: var(--sage-deep); }
+.vault-state { display: inline-flex; flex-shrink: 0; align-items: center; gap: 6px; padding: 7px 10px; border: 1px solid #d8d9cf; border-radius: 999px; color: var(--muted-ink); background: #f5f5ee; font-size: .7rem; font-weight: 600; white-space: nowrap; }
+.vault-state.is-unlocked { background: #eef5ec; border-color: #c6d7c3; color: #3d6146; }
+.vault-intro { max-width: 650px; margin: 15px 0 8px; color: var(--muted-ink); font-size: .93rem; letter-spacing: -.025em; line-height: 1.8; word-break: keep-all; }
+.vault-synthetic-note { margin: 0; color: var(--sage-deep); font-size: .77rem; line-height: 1.7; word-break: keep-all; }
+.vault-notice { margin: 0; color: var(--muted-ink); font-size: .84rem; line-height: 1.7; word-break: keep-all; }
+.vault-notice:not(:empty) { margin-top: 18px; padding: 12px 15px; border: 1px solid var(--line); border-radius: 10px; background: #f8f6f0; }
+.vault-notice.is-success { color: #3d6146; background: #eef5ec; border-color: #ceddca; }
+.vault-notice.is-error { color: #903d25; background: #fff3ec; border-color: #eed0c0; }
+.vault-locked-panel { margin-top: 22px; padding: 32px; border: 1px solid #d7dfd1; border-radius: 16px; background: linear-gradient(145deg, #f4f7ef, #fffefa); }
+.vault-symbol { display: grid; width: 55px; height: 55px; margin-bottom: 19px; place-items: center; border: 1px solid #d2dfcd; border-radius: 18px; color: var(--sage-deep); background: #edf3e9; }
+.vault-locked-panel > h3 { margin: 0 0 11px; font-family: "Gowun Batang", Georgia, serif; color: var(--ink); font-size: clamp(1.35rem, 3.8vw, 1.55rem); line-height: 1.45; letter-spacing: -.04em; word-break: keep-all; }
+.vault-locked-panel > p:not(.vault-help) { margin: 0 0 22px; color: var(--muted-ink); font-size: .9rem; line-height: 1.8; letter-spacing: -.02em; word-break: keep-all; }
+.vault-button { display: inline-flex; min-height: 44px; align-items: center; justify-content: center; gap: 8px; padding: 10px 15px; border: 1px solid transparent; border-radius: 9px; font-family: inherit; font-size: .83rem; font-weight: 700; line-height: 1.4; text-decoration: none; transition: background-color 150ms ease, border-color 150ms ease; }
+.vault-primary { background: var(--sage-deep); color: white; border-color: var(--sage-deep); }
+.vault-primary:hover:not(:disabled) { background: #41644a; border-color: #41644a; }
+.vault-secondary { background: #fffefa; color: var(--ink); border-color: #d3cbbc; }
+.vault-secondary:hover:not(:disabled) { background: #fff4e9; border-color: #bc9e7f; }
+.vault-button:disabled, .vault-delete-button:disabled { opacity: .55; cursor: not-allowed; }
+.vault-login { min-width: 205px; }
+.vault-register-divider { display: flex; align-items: center; gap: 13px; margin: 28px 0 19px; color: var(--muted-ink); font-size: .74rem; }
+.vault-register-divider::after { flex: 1; height: 1px; background: #dfe3d8; content: ""; }
+.vault-register-form { margin: 0; }
+.vault-register-form label { display: block; margin-bottom: 9px; color: var(--ink); font-size: .8rem; font-weight: 700; line-height: 1.65; }
+.vault-register-form label span { margin-left: 7px; color: var(--muted-ink); font-size: .74rem; font-weight: 400; }
+.vault-input-row { display: flex; align-items: stretch; gap: 9px; }
+.vault-input-row input { min-width: 0; flex: 1; min-height: 44px; padding: 10px 13px; border: 1px solid #cecfc1; border-radius: 9px; background: #fff; color: var(--ink); font-family: inherit; font-size: .86rem; }
+.vault-input-row input::placeholder { color: #787366; }
+.vault-input-row input:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+.vault-input-row input:disabled { background: #f4f3ed; color: var(--muted-ink); }
+.vault-help { margin: 11px 0 0; color: var(--muted-ink); font-size: .75rem; line-height: 1.75; letter-spacing: -.018em; word-break: keep-all; }
+.vault-service-note { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin: 18px 0 0; padding: 15px 17px; border: 1px solid #ead9c8; border-radius: 10px; background: #fff8ef; color: #71543c; font-size: .84rem; line-height: 1.65; }
+.vault-service-note p { margin: 0; }
+.vault-open-panel { margin-top: 22px; padding: 27px; border: 1px solid #d7dfd1; border-radius: 16px; background: #f5f7f1; }
+.vault-account-bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 22px; }
+.vault-eyebrow { color: var(--sage-deep); font-size: .7rem; letter-spacing: .04em; }
+.vault-account-bar h3 { margin: 4px 0 0; color: var(--ink); font-size: 1rem; line-height: 1.5; overflow-wrap: anywhere; }
+.vault-records { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.vault-record { padding: 20px 18px; border: 1px solid #e1e2d8; border-radius: 11px; background: #fffefa; }
+.vault-record-index { color: var(--orange-deep); font-size: .7rem; letter-spacing: .08em; }
+.vault-record h3 { margin: 12px 0 10px; font-family: "Gowun Batang", Georgia, serif; color: var(--ink); font-size: 1.14rem; line-height: 1.5; letter-spacing: -.035em; word-break: keep-all; }
+.vault-record p { margin: 0; color: var(--muted-ink); font-size: .83rem; line-height: 1.85; white-space: pre-line; overflow-wrap: anywhere; }
+.vault-records-pending { grid-column: 1 / -1; padding: 26px 15px; color: var(--muted-ink); text-align: center; font-size: .85rem; }
+.vault-key-manager { margin-top: 28px; padding-top: 24px; border-top: 1px solid #dce1d5; }
+.vault-manager-heading { display: flex; align-items: center; gap: 8px; color: var(--sage-deep); }
+.vault-manager-heading h3 { margin: 0; color: var(--ink); font-size: .95rem; font-weight: 700; }
+.vault-manager-heading > span { padding: 2px 7px; border-radius: 5px; background: #e6ecdf; color: #48624b; font-size: .72rem; }
+.vault-key-list { display: grid; gap: 8px; margin: 17px 0 21px; padding: 0; list-style: none; }
+.vault-key-list li { display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 13px 14px; border: 1px solid #dfe3d8; border-radius: 9px; background: #fffefa; }
+.vault-key-list strong { display: block; color: var(--ink); font-size: .86rem; font-weight: 600; overflow-wrap: anywhere; }
+.vault-key-list time { display: block; margin-top: 5px; color: var(--muted-ink); font-size: .73rem; }
+.vault-delete-button { display: inline-flex; flex-shrink: 0; min-height: 42px; align-items: center; gap: 5px; padding: 7px 10px; border: 1px solid #e3d4c9; border-radius: 7px; background: transparent; color: #914725; font-family: inherit; font-size: .75rem; }
+.vault-delete-button:hover:not(:disabled) { background: #fff1e8; }
+.vault-recovery-note { margin: 18px 0 0; padding: 12px 14px; border-left: 2px solid #c48659; background: #f8f0e7; color: #7e4b2b; font-size: .77rem; line-height: 1.8; word-break: keep-all; }
+.vault-dialog-overlay { position: fixed; inset: 0; z-index: 100; background: rgba(37, 34, 28, .5); }
+.vault-delete-dialog { position: fixed; top: 50%; left: 50%; z-index: 101; width: min(500px, calc(100% - 32px)); max-height: calc(100dvh - 40px); overflow-y: auto; transform: translate(-50%, -50%); padding: 26px; border: 1px solid var(--line); border-radius: 15px; background: var(--paper); color: var(--ink); box-shadow: 0 18px 80px rgba(37, 34, 28, .22); }
+.vault-dialog-header { display: grid; gap: 14px; }
+.vault-dialog-title { margin: 0; font-family: "Gowun Batang", Georgia, serif; font-size: 1.3rem; line-height: 1.5; font-weight: 700; letter-spacing: -.025em; }
+.vault-dialog-description { margin: 0; color: var(--muted-ink); font-size: .86rem; line-height: 1.8; word-break: keep-all; }
+.vault-dialog-footer { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px; margin-top: 24px; }
+.vault-delete-dialog .vault-button:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
+.vault-delete-dialog .vault-confirm-delete { background: #914725; color: #fff; }
+.vault-delete-dialog .vault-confirm-delete:hover { background: #77391c; }
+@media (max-width: 640px) {
+  .vault-records { grid-template-columns: 1fr; }
+  .vault-record { padding: 18px; }
+  .vault-record h3 { margin-top: 8px; }
+}
+@media (max-width: 560px) {
+  .passkey-vault { margin-top: 44px; padding-top: 29px; }
+  .vault-heading-row { align-items: flex-start; gap: 12px; }
+  .vault-state { margin-top: 2px; padding: 6px 8px; font-size: .65rem; }
+  .vault-locked-panel { padding: 23px 20px; }
+  .vault-open-panel { padding: 20px 17px; }
+  .vault-input-row { flex-direction: column; }
+  .vault-register-form label span { display: block; margin: 4px 0 0; }
+  .vault-account-bar { align-items: flex-start; gap: 9px; }
+  .vault-account-bar .vault-button { flex-shrink: 0; padding: 9px 11px; font-size: .75rem; }
+  .vault-login { width: 100%; }
+  .vault-delete-dialog { padding: 22px 20px; }
+  .vault-dialog-footer { flex-direction: column-reverse; }
+  .vault-dialog-footer .vault-button { width: 100%; }
+}
